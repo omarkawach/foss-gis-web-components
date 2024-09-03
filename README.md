@@ -49,7 +49,7 @@ npm run storybook
 
 ### Publishing documentation
 
-Documenting a component's API can be time consuming. We can simplify things by using Storybook.
+Documenting a component's API can be time consuming. We can simplify things by using [Storybook](https://storybook.js.org/).
 
 ```bash
 npm run build-storybook
@@ -78,15 +78,16 @@ Now you can begin development and testing of your web component.
 ### What kind of tech is being used?
 
 - An open-source library for mapping on the web
-  - MapLibre GL JS
+  - [MapLibre GL JS](https://maplibre.org/)
 - Build / development tools 
-  - Lit for building web components 
+  - [Lit](https://lit.dev/) for writing web components 
     - [Stencil](https://stenciljs.com/), and [FAST](https://fast.design/) are potential alternatives
-  - Vite since Lit doesn't have its own compiler
+  - [Vite](https://vitejs.dev/) since Lit doesn't have its own compiler
+  - [Typescript](https://www.typescriptlang.org/)
 - Testing
-  - Storybook
-- Sample code
-  - Vue
+  - [Storybook](https://storybook.js.org/) (@storybook/web-components-vite)
+- Sample code for using the component in a framework
+  - [Vue](https://vuejs.org/)
 
 ### What are web components?
 
@@ -112,4 +113,10 @@ If you're looking to write some truly "enterprise-ready" web components, you wil
 - How to handle styling (e.g., [adoptedStyleSheets](https://developer.mozilla.org/en-US/docs/Web/API/Document/adoptedStyleSheets), juggle light DOM / shadow DOM, etc.)
 - What dependencies to externalize
 - Asset management (if the component package requires assets)
-- How to support lazy loading web components. Lazy loading prevents tree shaking and increases an app's bundle size.
+- How to bundle components together if necessary
+- How to support lazy loading web components. Lazy loading prevents tree shaking and increases an app's bundle size
+- Maintenance
+
+### Why Lit?
+
+Lit is a lightweight, un-opinionated, and customizable development system for writing web components. Since Lit doesn't have its own compiler, we use Vite for our development server and build tool. In comparison, Stencil has its own compiler but may not be flexible enough to adapt to the requirements of GIS web mapping libraries who want to be "enterprise-ready". Another comparison is that Stencil supports JSX, but Lit does not. FAST is also lightweight and doesn't include its own built-in compiler. Technically, you could write [web components with frameworks such as Vue](https://vuejs.org/guide/extras/web-components.html#building-custom-elements-with-vue), but then your component library might be less portable and become tightly coupled to that framework.
