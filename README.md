@@ -116,6 +116,7 @@ If you're looking to write some truly "enterprise-ready" web components, you wil
 - How to bundle components together if necessary
 - How to support lazy loading web components. Lazy loading prevents tree shaking and increases an app's bundle size
 - Maintenance
+  - Testing
   - Managing dependencies
   - Breaking changes
 
