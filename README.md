@@ -4,8 +4,7 @@ The intent of this repo is to help you get started with creating your own web co
 
 ## Components
 
-We only include one component as part of this component library / package. 
-That is the `<mlibre-point-map></mlibre-point-map>` component which allows you to add a series of points to a map. There are no plans to include additional components.
+We only include one component as part of this component library / package. That is the `<mlibre-point-map></mlibre-point-map>` component which allows you to add a series of points to a map. There are no plans to include additional components.
 
 ## Get started
 
@@ -116,6 +115,8 @@ If you're looking to write some truly "enterprise-ready" web components, you wil
 - How to bundle components together if necessary
 - How to support lazy loading web components. Lazy loading prevents tree shaking and increases an app's bundle size
 - Maintenance
+  - Managing dependencies
+  - Breaking changes
 
 ### Why Lit?
 
