@@ -100,7 +100,7 @@ Source: https://www.webcomponents.org/introduction
 
 ### What challenges are there with creating a web component library?
 
-If you're looking to write some truly "enterprise-ready" web component, you will face a series of challenges for consideration:
+If you're looking to write some truly "enterprise-ready" web components, you will face a series of challenges for consideration:
 - Whether or not to include framework wrappers
 - Publishing on npm
 - Typings
