@@ -5,7 +5,7 @@ The intent of this repo is to help you get started with creating your own web co
 ## Components
 
 We only include one component as part of this component library / package. 
-That is the `<mlibre-point-map></mlibre-point-map>` component which allows you to add a series of points to a series of points to a map. There are no plans to include additional components.
+That is the `<mlibre-point-map></mlibre-point-map>` component which allows you to add a series of points to a map. There are no plans to include additional components.
 
 ## Get started
 
