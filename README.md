@@ -85,6 +85,7 @@ Now you can begin development and testing of your web component.
   - Vite since Lit doesn't have its own compiler
 - Testing
   - Storybook
+- Sample code
   - Vue
 
 ### What are web components?
