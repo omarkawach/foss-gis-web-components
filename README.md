@@ -105,6 +105,7 @@ If you're looking to write some truly "enterprise-ready" web components, you wil
 - Whether or not to include framework wrappers
 - Publishing on npm
 - Typings
+  - Including HTML typings is basically a freebie. Typings for JSX would be an additional effort
 - Documentation
   - E.g., TypeDoc, JSON, MDX, etc.
 - Supporting formats other than [ECMAScript Modules](https://nodejs.org/api/esm.html) (ESM), like [AMD](https://en.wikipedia.org/wiki/Asynchronous_module_definition)
