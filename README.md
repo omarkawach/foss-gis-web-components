@@ -72,7 +72,7 @@ Since we're using Lit, the first thing you'd have to do is run `npm create vite@
 
 At this point you'll have a few unnecessary files. You can clear out stories you don't need. If you want to work with typescript you'll need to update your `tsconfig.json` and if you want to externalize any dependencies you would have to add or update your `vite.config.ts` file. 
 
-Now you can begin development and testing of your web component.
+Now you can begin developing and testing your component(s).
 
 ### What kind of tech is being used?
 
