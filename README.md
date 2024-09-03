@@ -79,7 +79,7 @@ Now you can begin development and testing of your web component.
 
 - An open-source library for mapping on the web
   - MapLibre GL JS
-- Build tools 
+- Build / development tools 
   - Lit for building web components 
     - [Stencil](https://stenciljs.com/), and [FAST](https://fast.design/) are potential alternatives
   - Vite since Lit doesn't have its own compiler
@@ -106,6 +106,7 @@ If you're looking to write some truly "enterprise-ready" web components, you wil
 - Publishing on npm
 - Typings
 - Documentation
+  - E.g., TypeDoc, JSON, MDX, etc.
 - Supporting formats other than [ECMAScript Modules](https://nodejs.org/api/esm.html) (ESM), like [AMD](https://en.wikipedia.org/wiki/Asynchronous_module_definition)
   - If we only support ESM applications then that means vanilla JavaScript script-tag users who prefer writing quick apps in an `index.html` file will struggle
 - How to handle styling (e.g., [adoptedStyleSheets](https://developer.mozilla.org/en-US/docs/Web/API/Document/adoptedStyleSheets), juggle light DOM / shadow DOM, etc.)
