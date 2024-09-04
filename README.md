@@ -108,6 +108,7 @@ Source: https://www.webcomponents.org/introduction
 If you're looking to write some truly "enterprise-ready" web components, you will face a series of challenges for consideration:
 - Whether or not to include framework wrappers
 - Publishing on npm
+- How well a GIS web mapping library can work with web components
 - Typings
   - Including HTML typings is basically a freebie. Typings for JSX would be an additional effort
 - Documentation
