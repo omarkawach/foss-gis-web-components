@@ -6,6 +6,8 @@ The intent of this repo is to help you get started with creating your own web co
 
 We only include one component as part of this component library / package. That is the `<mlibre-point-map></mlibre-point-map>` component which allows you to add a series of points to a map. There are no plans to include additional components.
 
+You can view this component live [here]() in a Storybook.
+
 ## Get started
 
 ### Install dependencies
@@ -61,7 +63,9 @@ You can run `npm pack` for a preview of what the npm package would look like
 ## Resources
 
 [Lit - Hello world playground](https://lit.dev/playground/#sample=examples/hello-world)
+
 [Lit - Publishing your component package](https://lit.dev/docs/tools/publishing/)
+
 [Lit - React framework wrapper](https://lit.dev/docs/frameworks/react/)
 
 ## FAQ
@@ -108,13 +112,16 @@ If you're looking to write some truly "enterprise-ready" web components, you wil
   - Including HTML typings is basically a freebie. Typings for JSX would be an additional effort
 - Documentation
   - E.g., TypeDoc, JSON, MDX, etc.
-- Supporting formats other than [ECMAScript Modules](https://nodejs.org/api/esm.html) (ESM), like [AMD](https://en.wikipedia.org/wiki/Asynchronous_module_definition)
+- Support module formats other than [ECMAScript Modules](https://nodejs.org/api/esm.html) (ESM), like [AMD](https://en.wikipedia.org/wiki/Asynchronous_module_definition)
   - If we only support ESM applications then that means vanilla JavaScript script-tag users who prefer writing quick apps in an `index.html` file will struggle
 - How to handle styling (e.g., [adoptedStyleSheets](https://developer.mozilla.org/en-US/docs/Web/API/Document/adoptedStyleSheets), juggle light DOM / shadow DOM, etc.)
-- What dependencies to externalize
 - Asset management (if the component package requires assets)
-- How to bundle components together if necessary
-- How to support lazy loading web components. Lazy loading prevents tree shaking and increases an app's bundle size
+- Support disconnected / self-contained environment setups
+- Development system for web components
+  - Does it include a built-in compiler? How much can this compiler do for you?
+  - Can it bundle components together if necessary?
+  - Can it support lazy loading web components? Lazy loading prevents tree shaking and increases an app's bundle size
+  - Can it externalize dependencies?
 - Maintenance
   - Testing
   - Managing dependencies
@@ -123,6 +130,10 @@ If you're looking to write some truly "enterprise-ready" web components, you wil
 ### Why Lit?
 
 Lit is a lightweight, un-opinionated, and customizable development system for writing web components. Since Lit doesn't have its own compiler, we use Vite for our development server and build tool. In comparison, Stencil has its own compiler but may not be flexible enough to adapt to the requirements of GIS web mapping libraries who want to be "enterprise-ready". Another comparison is that Stencil supports JSX, but Lit does not. FAST is also lightweight and doesn't include its own built-in compiler. Technically, you could write [web components with frameworks such as Vue](https://vuejs.org/guide/extras/web-components.html#building-custom-elements-with-vue), but then your component library might be less portable and become tightly coupled to that framework.
+
+### How to debug
+
+The component relies on MapLibre GL JS. You can look for errors in DevTools. For example, if an invalid `style.json` is passed to the `mapStyle` property then there will be an AJAX error in the console.
 
 ## Acknowledgements
 

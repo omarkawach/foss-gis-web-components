@@ -1,0 +1,36 @@
+import { Meta, Title, Canvas, Controls, Story } from "@storybook/blocks";
+import { html } from 'lit';
+import * as ComponentStory from "../stories/mlibre-point-map.stories";
+import "../components/mlibre-point-map/mlibre-point-map";
+
+<Meta title="Welcome" of={ComponentStory}  />
+
+<Title>Welcome</Title>
+
+This is a component library for the `mlibre-point-map` component. This component allows you to add a series of points to a map. The component was built with [MapLibre GL JS](https://maplibre.org/). There are no plans to include additional components.
+
+## Basic usage
+
+The component has default values which means the component should work out of the box without any additional configuration. 
+
+```html
+<mlibre-point-map></mlibre-point-map>
+```
+
+But, you can also modify these default values:
+
+<Canvas 
+  additionalActions={[
+    {
+      title: 'Open in GitHub',
+      onClick: () => {
+        window.open(
+          'https://github.com/omarkawach/foss-gis-web-components',
+          '_blank'
+        );
+      },
+    }
+  ]}
+of={ComponentStory.Simple} 
+/>
+<Controls of={ComponentStory.Simple} />
