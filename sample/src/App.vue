@@ -47,6 +47,7 @@ const mapLoaded = ({ detail: { map } }) => {
   <main>
     <div class="map-container">
       <mlibre-point-map
+        center="0, 20"
         v-bind:points="points"
         v-on:mapLoaded="mapLoaded"
       ></mlibre-point-map>
@@ -86,7 +87,7 @@ main {
 }
 
 .map-container {
-  height: 80%;
-  width: 80%;
+  height: 85%;
+  width: 85%;
 }
 </style>
