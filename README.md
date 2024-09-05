@@ -6,7 +6,7 @@ The intent of this repo is to help you get started with creating your own web co
 
 We only include one component as part of this component library / package. That is the `<mlibre-point-map></mlibre-point-map>` component which allows you to add a series of points to a map. There are no plans to include additional components.
 
-You can view this component live [here]() in a Storybook.
+You can view this component live [here](https://omarkawach.github.io/foss-gis-web-components/?path=/docs/point-map-component--welcome) in a Storybook.
 
 ## Get started
 
