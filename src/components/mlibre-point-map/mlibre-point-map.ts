@@ -13,7 +13,7 @@ export class MLibrePointMap extends LitElement {
   // The container in MapLibre's Map class is mandatory and tough to workaround,
   // which results in a warning about our custom element scheduling an update after the first render.
   // We can suppress this warning by setting the static property
-  static enabledWarnings: WarningKind[] = ['migration'];
+  static enabledWarnings: WarningKind[] = ["migration"];
 
   /**
    * A reference to the mapDiv child element in the component's shadow DOM
@@ -65,6 +65,7 @@ export class MLibrePointMap extends LitElement {
       center: this.parseCenter(this.center),
       zoom: this.zoom,
     });
+    this._attachMapLoadListener(this.map);
   }
 
   /**
@@ -119,6 +120,12 @@ export class MLibrePointMap extends LitElement {
 
   private parseCenter(center: string): [number, number] {
     return center.split(",").map(Number) as [number, number];
+  }
+
+  private _attachMapLoadListener(map: MapLibre) {
+    map.on("load", () => {
+      this.dispatchEvent(new CustomEvent("mapLoaded", { detail: { map } }));
+    });
   }
 
   // Thanks to the ShadowDOM, styles are scoped to this element

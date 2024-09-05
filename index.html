@@ -26,7 +26,12 @@
 
       // Do some stuff once the map loads
       map.on("load", () => {
-        console.log("Map loaded");
+        console.log("Map loaded", map);
+      });
+
+      // Or listen for events this way
+      mapElement.addEventListener("mapLoaded", (event) => {
+        console.log("Map loaded", event.detail.map, event.target);
       });
 
       // You can add points to the map via the points property
