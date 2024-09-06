@@ -118,6 +118,7 @@ If you're looking to write some truly "enterprise-ready" web components, you wil
 - How to handle styling (e.g., [adoptedStyleSheets](https://developer.mozilla.org/en-US/docs/Web/API/Document/adoptedStyleSheets), juggle light DOM / shadow DOM, etc.)
 - Asset management (if the component package requires assets)
 - Support disconnected / self-contained environment setups
+- Support [server-side rendering](https://www.debugbear.com/blog/server-side-rendering) (SSR)
 - Development system for web components
   - Does it include a built-in compiler? How much can this compiler do for you?
   - Can it bundle components together if necessary?
