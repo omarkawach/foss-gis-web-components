@@ -74,7 +74,7 @@ You can run `npm pack` for a preview of what the npm package would look like
 
 Since we're using Lit, the first thing you'd have to do is run `npm create vite@latest` in your terminal and select `lit` from the CLI options. Then you'd run `npm install` to generate a `/node_modules`. Next, running `npx storybook@latest init` will include Storybook in your project.
 
-At this point you'll have a few unnecessary files. You can clear out stories you don't need. If you want to work with typescript you'll need to update your `tsconfig.json` and if you want to externalize any dependencies you would have to add or update your `vite.config.ts` file. 
+At this point you'll have a few unnecessary files. You can clear out stories you don't need. If you want to work with typescript you'll need to update your `tsconfig.json` and if you want to externalize any dependencies you would have to add or update your `vite.config.ts` file.
 
 Now you can begin developing and testing your component(s).
 
@@ -82,8 +82,8 @@ Now you can begin developing and testing your component(s).
 
 - An open-source library for mapping on the web
   - [MapLibre GL JS](https://maplibre.org/)
-- Build / development tools 
-  - [Lit](https://lit.dev/) for writing web components 
+- Build / development tools
+  - [Lit](https://lit.dev/) for writing web components
     - [Stencil](https://stenciljs.com/), and [FAST](https://fast.design/) are potential alternatives
   - [Vite](https://vitejs.dev/) since Lit doesn't have its own compiler
   - [Typescript](https://www.typescriptlang.org/)
@@ -94,18 +94,35 @@ Now you can begin developing and testing your component(s).
 
 ### What are web components?
 
-> Web components are a set of web platform APIs that allow you to create new custom, reusable, encapsulated HTML tags to use in web pages and web apps. Custom components and widgets build on the Web Component standards, will work across modern browsers, and can be used with any JavaScript library or framework that works with HTML. 
+> Web components are a set of web platform APIs that allow you to create new custom, reusable, encapsulated HTML tags to use in web pages and web apps. Custom components and widgets build on the Web Component standards, will work across modern browsers, and can be used with any JavaScript library or framework that works with HTML.
 > Web components are based on existing web standards. Features to support web components are currently being added to the HTML and DOM specs, letting web developers easily extend HTML with new elements with encapsulated styling and custom behavior.
 
 Source: https://www.webcomponents.org/introduction
 
 ### What is a library for mapping on the web
 
-...
+To include maps in a web applications, the easiest and most common way is through a mapping libraries. Mapping libraries provides out-of-box support for visualizations and interactions in maps. Common choices are as follows:
+
+- Open-source libraries: Leaflet, MapLibre, OpenLayers, turf.js (focused on spatial analysis) etc
+- Commerical libraries: ArcGIS Maps SDK for JavaScript, Google Maps JavaScript API, MapBox GL JS
+
+We are also seeing a growing number of mapping libaries offering maps as web components, notable liraries are:
+
+- Open-source: Nivo React (built on top of D3),
+  Vue 3.x components for CesiumJS,
+  React Leaflet,
+  ngx-leaflet (Angular) from BlueHalo,
+  ngx-maplibre-gl,
+  @planet/maps
+- Commericial libraries: ArcGIS Maps SDK for JavaScript components,
+  Google Maps JavaScript API Web Components
+
+Choosing the best web mapping libraries that suits the end users and the developers need is a crucial step for all web development involving maps and/or location services.
 
 ### What challenges are there with creating a web component library?
 
 If you're looking to write some truly "enterprise-ready" web components, you will face a series of challenges for consideration:
+
 - Whether or not to include framework wrappers
 - Publishing on npm
 - How well a GIS web mapping library can work with web components
