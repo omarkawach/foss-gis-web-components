@@ -125,7 +125,7 @@ If you're looking to write some truly "enterprise-ready" web components, you wil
 
 - Whether or not to include framework wrappers
 - Publishing on npm
-- How well a GIS web mapping library can work with web components
+- How well a GIS web mapping library can work with web component technology (e.g., slots and Shadow DOM)
 - Typings
   - Including HTML typings is basically a freebie. Typings for JSX would be an additional effort
 - Documentation
@@ -135,6 +135,7 @@ If you're looking to write some truly "enterprise-ready" web components, you wil
 - How to handle styling (e.g., [adoptedStyleSheets](https://developer.mozilla.org/en-US/docs/Web/API/Document/adoptedStyleSheets), juggle light DOM / shadow DOM, etc.)
 - Asset management (if the component package requires assets)
 - Support disconnected / self-contained environment setups
+- Support [server-side rendering](https://www.debugbear.com/blog/server-side-rendering) (SSR)
 - Development system for web components
   - Does it include a built-in compiler? How much can this compiler do for you?
   - Can it bundle components together if necessary?
