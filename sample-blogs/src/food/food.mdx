@@ -1,0 +1,45 @@
+import "@omar/mlibre/dist/mlibre-point-map";
+
+# My Favorite Restaurants in Bay Area
+
+From mango cream croissants to Beijing duck, all the best in the Bay
+<mlibre-point-map
+style={{width: '50%', height: '500px'}}
+zoom={8.5}
+center={'-122.4, 37.55'}
+points={
+[
+{
+lat: 37.3111546703276,
+lon: -122.02416355860439,
+color: "#883F1E",
+text: "Beijing Duck House: Traditional Beijing cuisine",
+},
+{
+lat: 37.35182085926892,
+lon: -121.97896460278277,
+color: "#F5AA3E",
+text: "Croissante: Bakery",
+},
+{
+lat: 37.78367679265353,
+lon: -122.43294256204328,
+color: "#32CD32",
+text: "The Progress: New American",
+},
+{
+lat: 37.86393084429608,
+lon: -122.25873879906004,
+color: "#FA8072",
+text: "Kiraku: Izakaya",
+},
+{
+lat: 37.59966607909376,
+lon: -122.36661317578928,
+color: "#DEC39A",
+text: "HL Pennisula Pearl: Dim sum and Cantonese cuisine",
+},
+]
+}
+
+> </mlibre-point-map>
