@@ -106,7 +106,7 @@ To include maps in a web application, the easiest and most common way is through
 - Open-source libraries: Leaflet, MapLibre, OpenLayers, turf.js (focused on spatial analysis), etc.
 - Commerical libraries: ArcGIS Maps SDK for JavaScript, Google Maps JavaScript API, MapBox GL JS
 
-  We are also seeing a growing number of mapping libraries as Raect, Angular, web, or Vue components. Some notable component liraries are:
+We are also seeing a growing number of mapping libraries as Raect, Angular, web, or Vue components. Some notable component liraries are:
 
 - Open-source: Nivo React (built on top of D3),
   Vue 3.x components for CesiumJS,
