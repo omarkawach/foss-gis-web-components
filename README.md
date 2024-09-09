@@ -50,7 +50,7 @@ npm run storybook
 
 ### Publishing documentation
 
-Documenting a component's API can be time consuming. We can simplify things by using [Storybook](https://storybook.js.org/).
+Documenting a component's API can be time consuming. We can simplify things by using [Storybook](https://storybook.js.org/). This repo has a github action that publishes the Storybook to github pages.
 
 ```bash
 npm run build-storybook
