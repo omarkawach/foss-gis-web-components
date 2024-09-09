@@ -146,6 +146,8 @@ If you're looking to write some truly "enterprise-ready" web components, you wil
   - Managing dependencies
   - Breaking changes
 
+These are only some of the considerations, but ultimately, if you're aiming for a bare minimum component library you could probably ignore some of or all of the considerations.
+
 ### Why Lit?
 
 Lit is a lightweight, un-opinionated, and customizable development system for writing web components. Since Lit doesn't have its own compiler, we use Vite for our development server and build tool. In comparison, Stencil has its own compiler but may not be flexible enough to adapt to the requirements of GIS web mapping libraries who want to be "enterprise-ready". Another comparison is that Stencil supports JSX, but Lit does not. FAST is also lightweight and doesn't include its own built-in compiler. Technically, you could write [web components with frameworks such as Vue](https://vuejs.org/guide/extras/web-components.html#building-custom-elements-with-vue), but then your component library might be less portable and become tightly coupled to that framework.
