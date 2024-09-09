@@ -99,7 +99,7 @@ Now you can begin developing and testing your component(s).
 
 Source: https://www.webcomponents.org/introduction
 
-### What is a library for mapping on the web
+### What is a library for mapping on the web?
 
 To include maps in a web application, the easiest and most common way is through mapping libraries. Mapping libraries provides out-of-box support for visualizations and interactions in maps. Common choices are as follows:
 
