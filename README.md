@@ -101,12 +101,12 @@ Source: https://www.webcomponents.org/introduction
 
 ### What is a library for mapping on the web
 
-To include maps in a web applications, the easiest and most common way is through a mapping libraries. Mapping libraries provides out-of-box support for visualizations and interactions in maps. Common choices are as follows:
+To include maps in a web application, the easiest and most common way is through mapping libraries. Mapping libraries provides out-of-box support for visualizations and interactions in maps. Common choices are as follows:
 
-- Open-source libraries: Leaflet, MapLibre, OpenLayers, turf.js (focused on spatial analysis) etc
+- Open-source libraries: Leaflet, MapLibre, OpenLayers, turf.js (focused on spatial analysis), etc.
 - Commerical libraries: ArcGIS Maps SDK for JavaScript, Google Maps JavaScript API, MapBox GL JS
 
-We are also seeing a growing number of mapping libaries offering maps as web components, notable liraries are:
+  We are also seeing a growing number of mapping libraries as Raect, Angular, web, or Vue components. Some notable component liraries are:
 
 - Open-source: Nivo React (built on top of D3),
   Vue 3.x components for CesiumJS,
@@ -117,7 +117,7 @@ We are also seeing a growing number of mapping libaries offering maps as web com
 - Commericial libraries: ArcGIS Maps SDK for JavaScript components,
   Google Maps JavaScript API Web Components
 
-Choosing the best web mapping libraries that suits the end users and the developers need is a crucial step for all web development involving maps and/or location services.
+Choosing the best web mapping libraries that suit end user and developer needs is a crucial step for all web development involving maps and/or location services.
 
 ### What challenges are there with creating a web component library?
 
