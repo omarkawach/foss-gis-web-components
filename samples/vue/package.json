@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "vue": "^3.4.37",
-    "@omar/mlibre": "../"
+    "@omar/mlibre": "../../"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.1.2",

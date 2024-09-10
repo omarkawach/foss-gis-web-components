@@ -19,7 +19,7 @@ This root folder contains two very simple blog-style pages that use the `mplibre
 ![alt text](img/olympics.png)
 ![alt text](img/food.png)
 
-### Further read: using web components in WordPress
+### Further reading: using web components in WordPress
 
 WordPress is the leading Content Management System. You can also include custom web map components in WordPress, as shown in the [example](https://iadevelopment.wpengine.com/esri-european-developer-summit-berlin-2022-web-components-demo/)
 
