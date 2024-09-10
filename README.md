@@ -56,15 +56,7 @@ Documenting a component's API can be time consuming. We can simplify things by u
 npm run build-storybook
 ```
 
-### Publishing a component package
-
-You can run `npm pack` for a preview of what the npm package would look like
-
 ## FAQ
-
-### How do you publish a component package to npm?
-
-Lit has documentation on [publishing your component package](https://lit.dev/docs/tools/publishing/) and if necessary, a [React framework wrapper](https://lit.dev/docs/frameworks/react/) too 
 
 ### How would I recreate a similar repo like this one but from scratch?
 
@@ -115,6 +107,14 @@ We are also seeing a growing number of mapping libraries as React, Angular, web,
 
 Choosing the best web mapping libraries that suit end user and developer needs is a crucial step for all web development involving maps and/or location services.
 
+### How do you publish a component package to npm?
+
+You can run `npm pack` for a preview of what an npm package of your components would look like. Additionally, Lit has documentation on [publishing your component package](https://lit.dev/docs/tools/publishing/) and if necessary, a [React 18 framework wrapper](https://lit.dev/docs/frameworks/react/) too. React 19 [seems to work fine](https://custom-elements-everywhere.com/) without a framework wrapper. This is demonstrated in one of the samples in this repo.
+
+### What's the recommendation for documenting a component's API?
+
+The [web components community](https://www.webcomponents.org/) recommends the [community standard custom-elements-manifest JSON](https://github.com/webcomponents/custom-elements-manifest).
+
 ### What challenges are there with creating a web component library?
 
 If you're looking to write some truly "enterprise-ready" web components, you will face a series of challenges for consideration:
@@ -127,8 +127,8 @@ If you're looking to write some truly "enterprise-ready" web components, you wil
 - Documentation
   - E.g., TypeDoc, JSON, MDX, etc.
 - Support module formats other than [ECMAScript Modules](https://nodejs.org/api/esm.html) (ESM), like [AMD](https://en.wikipedia.org/wiki/Asynchronous_module_definition)
-  - If we only support ESM applications then that means vanilla JavaScript script-tag users who prefer writing quick apps in an `index.html` file will struggle
-- How to handle styling (e.g., [adoptedStyleSheets](https://developer.mozilla.org/en-US/docs/Web/API/Document/adoptedStyleSheets), juggle light DOM / shadow DOM, etc.)
+  - If we only support ESM applications then that means vanilla JavaScript script-tag users who prefer writing quick apps in an `index.html` file will struggle. The level of complexity for implementing this support can depend on how well your mapping library plays with certain module formats.
+- How to handle styling (e.g., [adoptedStyleSheets](https://developer.mozilla.org/en-US/docs/Web/API/Document/adoptedStyleSheets), light DOM / shadow DOM, etc.)
 - Asset management (if the component package requires assets)
 - Support disconnected / self-contained environment setups
 - Support [server-side rendering](https://www.debugbear.com/blog/server-side-rendering) (SSR)
@@ -148,9 +148,13 @@ These are only some of the considerations, but ultimately, if you're aiming for 
 
 Lit is a lightweight, un-opinionated, and customizable development system for writing web components. Since Lit doesn't have its own compiler, we use Vite for our development server and build tool. In comparison, Stencil has its own compiler but may not be flexible enough to adapt to the requirements of GIS web mapping libraries who want to be "enterprise-ready". Another comparison is that Stencil supports JSX, but Lit does not. FAST is also lightweight and doesn't include its own built-in compiler. Technically, you could write [web components with frameworks such as Vue](https://vuejs.org/guide/extras/web-components.html#building-custom-elements-with-vue), but then your component library might be less portable and become tightly coupled to that framework.
 
-### How to debug
+### How to debug?
 
 The component relies on MapLibre GL JS. You can look for errors in DevTools. For example, if an invalid `style.json` is passed to the `mapStyle` property then there will be an AJAX error in the console.
+
+### What are some additional resources?
+
+https://github.com/web-padawan/awesome-web-components
 
 ## Acknowledgements
 
