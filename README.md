@@ -77,8 +77,9 @@ Now you can begin developing and testing your component(s).
   - [Typescript](https://www.typescriptlang.org/)
 - Testing
   - [Storybook](https://storybook.js.org/) (@storybook/web-components-vite)
-- Sample code for using the component in a framework
+- Sample code for using the component in frameworks
   - [Vue](https://vuejs.org/)
+  - [React 19 (beta)](https://react.dev/blog/2024/04/25/react-19) and [MDX](https://mdxjs.com/)
 
 ### What are web components?
 
