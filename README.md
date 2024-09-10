@@ -60,15 +60,11 @@ npm run build-storybook
 
 You can run `npm pack` for a preview of what the npm package would look like
 
-## Resources
-
-[Lit - Hello world playground](https://lit.dev/playground/#sample=examples/hello-world)
-
-[Lit - Publishing your component package](https://lit.dev/docs/tools/publishing/)
-
-[Lit - React framework wrapper](https://lit.dev/docs/frameworks/react/)
-
 ## FAQ
+
+### How do you publish a component package to npm?
+
+Lit has documentation on [publishing your component package](https://lit.dev/docs/tools/publishing/) and if necessary, a [React framework wrapper](https://lit.dev/docs/frameworks/react/) too 
 
 ### How would I recreate a similar repo like this one but from scratch?
 
@@ -104,9 +100,9 @@ Source: https://www.webcomponents.org/introduction
 To include maps in a web application, the easiest and most common way is through mapping libraries. Mapping libraries provides out-of-box support for visualizations and interactions in maps. Common choices are as follows:
 
 - Open-source libraries: Leaflet, MapLibre, OpenLayers, turf.js (focused on spatial analysis), etc.
-- Commerical libraries: ArcGIS Maps SDK for JavaScript, Google Maps JavaScript API, MapBox GL JS
+- Commercial libraries: ArcGIS Maps SDK for JavaScript, Google Maps JavaScript API, MapBox GL JS
 
-We are also seeing a growing number of mapping libraries as Raect, Angular, web, or Vue components. Some notable component liraries are:
+We are also seeing a growing number of mapping libraries as React, Angular, web, or Vue components. Some notable component libraries are:
 
 - Open-source: Nivo React (built on top of D3),
   Vue 3.x components for CesiumJS,
