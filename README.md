@@ -157,6 +157,8 @@ The component relies on MapLibre GL JS. You can look for errors in DevTools. For
 
 https://github.com/web-padawan/awesome-web-components
 
+https://github.com/joewdavies/awesome-frontend-gis
+
 ## Acknowledgements
 
 This repo was prepared for a [session](https://whova.com/embedded/session/yES4SgdEKaaEK0AD6y4YnM1DD3NRWjkPECkzqJQHhCY%3D/4005893/?widget=primary) at [FOSS4G NA 2024](https://www.foss4gna.org/)
