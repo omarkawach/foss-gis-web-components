@@ -92,19 +92,30 @@ Source: https://www.webcomponents.org/introduction
 
 To include maps in a web application, the easiest and most common way is through mapping libraries. Mapping libraries provides out-of-box support for visualizations and interactions in maps. Common choices are as follows:
 
-- Open-source libraries: Leaflet, MapLibre, OpenLayers, turf.js (focused on spatial analysis), etc.
-- Commercial libraries: ArcGIS Maps SDK for JavaScript, Google Maps JavaScript API, MapBox GL JS
+- Open-source libraries: 
+  - [Leaflet](https://leafletjs.com/)
+  - [MapLibre GL JS](https://maplibre.org/)
+  - [OpenLayers](https://openlayers.org/)
+  - [turf.js](https://turfjs.org/)
+- Commercial libraries: 
+  - [ArcGIS Maps SDK for JavaScript](https://developers.arcgis.com/javascript/latest/)
+  - [Google Maps JavaScript API](https://developers.google.com/maps/documentation/javascript/overview)
+  - [MapBox GL JS](https://docs.mapbox.com/mapbox-gl-js/guides/)
 
 We are also seeing a growing number of mapping libraries as React, Angular, web, or Vue components. Some notable component libraries are:
 
-- Open-source: Nivo React (built on top of D3),
-  Vue 3.x components for CesiumJS,
-  React Leaflet,
-  ngx-leaflet (Angular) from BlueHalo,
-  ngx-maplibre-gl,
-  @planet/maps
-- Commericial libraries: ArcGIS Maps SDK for JavaScript components,
-  Google Maps JavaScript API Web Components
+- Open-source: 
+  - [Nivo React](https://github.com/plouc/nivo) (built on top of D3)
+  - [Vue 3.x components for CesiumJS](https://github.com/zouyaoji/vue-cesium)
+  - [React Leaflet](https://react-leaflet.js.org/)
+  - [ngx-leaflet](https://www.npmjs.com/package/@asymmetrik/ngx-leaflet)
+  - [ngx-maplibre-gl](https://github.com/maplibre/ngx-maplibre-gl)
+  - [@planet/maps](https://github.com/planetlabs/maps)
+  - [leaflet-map](https://github.com/leaflet-extras/leaflet-map)
+  - [openlayers-elements](https://github.com/openlayers-elements/openlayers-elements)
+- Commericial libraries: 
+  - [ArcGIS Maps SDK for JavaScript components](https://developers.arcgis.com/javascript/latest/components/)
+  - [Google Maps JavaScript API Web Components](https://mapsplatform.google.com/resources/blog/build-maps-faster-web-components/#:~:text=Maps%20JavaScript%20API%20Web%20Components.%20Developers%20can%20access)
 
 Choosing the best web mapping libraries that suit end user and developer needs is a crucial step for all web development involving maps and/or location services.
 
