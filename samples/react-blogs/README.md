@@ -1,15 +1,15 @@
 # Using map web component in blogs
 
-This root folder contains two very simple blog-style pages that use the `mplibre-point-map` to display a simple map. The goal is to show the a simple but clear example of using custom map web components in a blog site and inspire more exciting future works of including map as web components in non-GIS pages.
+This folder contains a simple blog-style page that use the `mplibre-point-map` to display a simple map. The goal is to show the a simple but clear example of using custom map web components in a blog site and inspire more exciting future works of including map as web components in non-GIS pages.
 
-### Technologies in the two blogs:
+## Technologies in the two blogs:
 
 - Blog: [MDX](https://mdxjs.com/)
 - Framework: React 19 with Vite
   - using [React 19](https://vercel.com/blog/whats-new-in-react-19) for it's better suppot in components without React wrapper
   - combined MDX support with [`@mdx-js/rollup`](https://mdxjs.com/packages/rollup/)
 
-### Get started:
+## Get started:
 
 - Run `npm install` in the root directory
 - Build `@omar/mlibre` in the root directory using `npm run build`
@@ -17,9 +17,8 @@ This root folder contains two very simple blog-style pages that use the `mplibre
 - Start the development server with `npm run dev`
 
 ![alt text](img/olympics.png)
-![alt text](img/food.png)
 
-### Further reading: using web components in WordPress
+## Further reading: using web components in WordPress
 
 WordPress is the leading Content Management System. You can also include custom web map components in WordPress, as shown in the [example](https://iadevelopment.wpengine.com/esri-european-developer-summit-berlin-2022-web-components-demo/)
 
